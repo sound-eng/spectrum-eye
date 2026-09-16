@@ -2,16 +2,23 @@
 
 Public web presence for [Spectrum Eye](https://www.spectrum-eye.com/) — the iOS real-time analyzer (RTA), SPL meter, and spectrogram for iPhone and iPad.
 
-The repo used to contain only the privacy policy at the root; it now also includes the marketing site under `docs/` (served via GitHub Pages) and source artwork used to build `docs/assets/`.
+Everything published on GitHub Pages lives under `docs/`. The repository root only adds this README.
 
-## What’s in the repo
+```
+.
+├── README.md
+└── docs/
+    ├── .nojekyll
+    ├── index.html
+    ├── features.html
+    ├── se_privacy_policy_en.html
+    └── assets/
+        ├── css/site.css
+        ├── js/site.js
+        └── img/          # hero, logo, favicons, App Store badges, screenshots
+```
 
-| Path | Purpose |
-|------|---------|
-| `docs/` | **Published site** — HTML, CSS, JS, and web images (GitHub Pages source) |
-| Root `*.png`, `sp-icon.png`, etc. | Full-resolution screenshots and sources used to regenerate `docs/assets/img/` |
-| `social.txt` | Social and community URLs referenced on the site |
-| `spectrum_eye_privacy_policy_en.md` | Privacy policy source; the live page is `docs/se_privacy_policy_en.html` |
+Social links (Facebook, WhatsApp, UserJot) are in the footers of `docs/index.html` and `docs/features.html`. App Store URLs use campaign tag `ct=website`.
 
 ## GitHub Pages
 
@@ -26,5 +33,3 @@ cd docs && python3 -m http.server 8000
 ```
 
 Open [http://localhost:8000/](http://localhost:8000/).
-
-The App Store listing is linked from the site with campaign tag `ct=website`.
