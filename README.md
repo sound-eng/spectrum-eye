@@ -12,6 +12,7 @@ Everything published on GitHub Pages lives under `docs/`. The repository root on
     ├── index.html
     ├── features.html
     ├── se_privacy_policy_en.html
+    ├── se_privacy_policy_uk.html
     └── assets/
         ├── css/site.css
         ├── js/site.js
